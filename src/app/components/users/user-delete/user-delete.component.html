@@ -1,0 +1,44 @@
+<mat-card>
+  <mat-card-title>Excluir Úsuario</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Nome"
+        [value]="user.nome"
+        name="nome"
+        disabled
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Sobrenome"
+        [value]="user.sobrenome"
+        name="sobrenome"
+        disabled
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Idade"
+        [value]="user.idade"
+        name="idade"
+        disabled
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Sexo"
+        [value]="user.sexo"
+        name="sexo"
+        disabled
+      />
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="deleteUser()" color="warn">Excluir</button>
+
+  <button mat-raised-button (click)="cancel()">Cancelar</button>
+</mat-card>
